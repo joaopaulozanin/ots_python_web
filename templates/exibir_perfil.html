@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block conteudo %}
+    {% for entrada in entradas%}
+        <h2> {{ entrada.titulo }} </h2>
+        <p> {{ entrada.texto }} </p>
+    {% else %}
+        <i>Esse blog ainda não tem postagens</i>
+    {% endfor %}
+{% endblock %}
